@@ -26,9 +26,9 @@
 	
 	width: 325px;
 	height: 325px;
-	background: #fff;
 	vertical-align: top;
-
+	
+	background-color: deeppink;
 	box-shadow: 23px 23px 20px rgba(0,0,0,0.65);
 }
 
