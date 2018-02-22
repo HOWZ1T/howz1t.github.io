@@ -6,11 +6,12 @@
 			<title>Dylan's Github Repository</title>
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/dropdown.css">
 		</head>
 		
 		<header>
 			<div>
-				<a style="cursor: pointer" onclick="javascript: window.location = 'https://github.com/HOWZ1T';">
+				<a style="cursor: pointer" onclick="javascript: window.location = 'index.html';">
 					<span class='logo'></span>
 					<span class='title'>
 						<h1>Dylan Randall's</h1>
@@ -21,18 +22,34 @@
 		</header>
 		
 		<nav>
+			<div class="nav-center">
+				<ul>
+					<li>
+						<a href='index.html'>HOME</a>
+					</li>
+					
+					<li>
+						<div class="dropdown">
+							<a onclick="showDropdown()" class="dropbtn">PAGES</a>
+						  	<div id="dropdownNav" class="dropdown-content">
+								<a href="https://github.com/HOWZ1T">MY GITHUB</a>
+								<a href="experiments/borders/border.html">BORDERS</a>
+						  	</div>
+						</div> 
+					</li>
+				</ul>
+			</div>
 		</nav>
 		
 		<main>
 			<div id='content'>
 				<a onclick="javascript: window.location = 'https://github.com/HOWZ1T/Cardtastic-Website';">
 					<div class='repo'>
-
-					<div class='thumb'><img src='https://raw.githubusercontent.com/HOWZ1T/Cardtastic-Website/master/Cardtastic/img/cardtastic_logo_black.jpg'></div>
-					<div class="overlay">
-						<p>A website made for an university subject assignment. <br><br>Based on the real business Cardtastic.</p>
-					</div>
-					<h1>Cardtastic</h1>
+						<div class='thumb'><img src='https://raw.githubusercontent.com/HOWZ1T/Cardtastic-Website/master/Cardtastic/img/cardtastic_logo_black.jpg'></div>
+						<div class="overlay">
+							<p>A website made for a university subject assignment. <br><br>Based on the real business Cardtastic.</p>
+						</div>
+						<h1>Cardtastic</h1>
 					</div>
 				</a>
 				
@@ -160,5 +177,7 @@
 		
 		<footer>
 		</footer>
+		
+		<script type="text/javascript" src="scripts/dropdown.js"></script>
 	</body>
 </html>

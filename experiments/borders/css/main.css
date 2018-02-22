@@ -1,0 +1,95 @@
+/* latin-ext */
+@font-face 
+{
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlM-vWjMY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face 
+{
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v7/HI_SiYsKILxRpg3hIP6sJ7fM7PqlPevW.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.showcase
+{
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+	
+	width: 325px;
+	height: 325px;
+	background: #000;
+	vertical-align: top;
+
+	box-shadow: 23px 23px 20px rgba(0,0,0,0.65);
+}
+
+.showcase p
+{
+	font-family: "Source Code Pro";
+	font-size: 2em;
+	color: #FFFDFA;
+	text-align: center;
+	margin-top: 132px;
+}
+
+.neon
+{
+	position: relative;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 2px #fffdfa;
+	border-radius: 8px;
+	box-shadow: 0px 0px 35px 10px #FFFDFA, /*OUTER WHITE GLOW*/
+				0px 0px 20px 6px #FFFDFA inset, /*INNER WHITE GLOW*/
+				0px 0px 50px 30px #FF0000, /*OUTER RED GLOW*/
+				0px 0px 50px 5px #FF0000 inset; /*INNER RED GLOW*/
+	
+	animation: neon-glow 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+}
+
+@keyframes neon-glow
+{
+	to {
+		box-shadow: 0px 0px 40px 14px #FFFDFA, /*OUTER WHITE GLOW*/
+					0px 0px 25px 8px #FFFDFA inset, /*INNER WHITE GLOW*/
+					0px 0px 55px 40px #FF0000, /*OUTER RED GLOW*/
+					0px 0px 55px 10px #FF0000 inset; /*INNER RED GLOW*/
+	}
+}
+
+.breathing
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 190px;
+	height: 50px;
+	padding-top: 10px;
+	border: solid 4px #fff;
+	
+	animation: breathing 1.4s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate;
+}
+
+@keyframes breathing
+{
+	to {
+		margin-left: auto;
+		margin-right: auto;
+	
+		width: 290px;
+		height: 100px;
+		padding-top: 55px;
+		
+		margin-top: 87px;
+	}
+}
