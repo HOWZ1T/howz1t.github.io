@@ -35,7 +35,7 @@
 .showcase p
 {
 	font-family: "Source Code Pro";
-	font-size: 4em;
+	font-size: 2em;
 	color: #FFFDFA;
 	text-align: center;
 	margin-top: 90px;
@@ -43,7 +43,10 @@
 
 .bordered
 {
+	font-family: monospace !important;
+	font-weight: 900 !important;
+	font-size: 5em !important;
 	-webkit-text-fill-color: white;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 4px;
 	-webkit-text-stroke-color: black;
 }
